@@ -1,4 +1,4 @@
-<?php $data["title"] = "Desktop 11"; ?>
+<?php $data["title"] = "Desktop 14"; ?>
 <?php $isLogin = true; ?>
 <?php $isBack = false; ?>
 <?php require "template-parts/layouts/header.php"; ?>
@@ -32,25 +32,33 @@
 </div>
 
 <!--Modal Login-->
-<div id="modal-desktop11" class="desktop3__modal uk-flex-top" uk-modal>
+<div id="modal-desktop14" class="desktop3__modal uk-flex-top" uk-modal>
     <div class="uk-modal-dialog desktop3__modal__dialog uk-modal-body uk-margin-auto-vertical">
 
         <button class="uk-modal-close-default" type="button" uk-close></button>
-        <div>
-            <div class="uk-text-center desktop11__title">Insufficient Credit</div>
-            <div class="item__32-16">
-                <img src="images/desktop11/GIF31.png" alt="">
+        <div class="uk-text-center">
+            <div class="header__pay">100 <img src="images/Asset11.png" alt=""></div>
+        </div>
+        <div class="item__32-16 uk-text-center">
+            <div class="uk-cover-container uk-border-circle uk-margin-auto uk-flex-inline">
+                <img src="images/lemanhhai_anhthe.jpg" alt="" uk-cover="">
+                <canvas width="120" height="120"></canvas>
             </div>
-            <div class="uk-text-center item__32-16 desktop11__desc">You are so out of credit right now, my friend.
-                Buy more credit to keep creating finest arts
-                made by our powerful AI Art Generator.
-                Or wait until your next free daily credits</div>
-            <button class="header__btnLogin item__24-12 uk-width uk-button uk-button-secondary uk-button-small uk-border-rounded"><span>Buy more credit</span></button>
+            <div class="item__12 desktop14__name">NAME NAME</div>
+            <div class="item__4 desktop14__email">abcd.zyx@mail.com</div>
+        </div>
+        <div class="item__32-16">
+            <button class="header__btnLogin uk-width uk-button uk-button-secondary uk-button-small uk-border-rounded"><span>Buy more credit</span></button>
+            <button class="desktop14__btn desktop14__btn--c1 desktop14__btn--pay item__12 uk-button uk-width uk-text-left uk-button-default uk-button-small uk-border-rounded"><span>Payment history</span></button>
+            <button class="desktop14__btn desktop14__btn--c1 desktop14__btn--setting item__12 uk-button uk-width uk-text-left uk-button-default uk-button-small uk-border-rounded"><span>setting</span></button>
+        </div>
+        <div class="item__40-20">
+            <button class="desktop14__btn desktop14__btn--c2 uk-button uk-width uk-button-secondary uk-button-small uk-border-rounded"><span>log out</span></button>
         </div>
     </div>
 </div>
 <!--/Modal Login-->
 <script>
-    UIkit.modal('#modal-desktop11').show();
+    UIkit.modal('#modal-desktop14').show();
 </script>
 <?php require "template-parts/layouts/footer.php"; ?>

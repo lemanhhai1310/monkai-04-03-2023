@@ -29,6 +29,12 @@
       margin-top: #{$x}px;
     }
   }
+  $x:12;
+  &__#{$x}{
+    &:nth-child(n+2){
+      margin-top: #{$x}px;
+    }
+  }
   $x:10;
   &__#{$x}{
     &:nth-child(n+2){
@@ -41,8 +47,31 @@
       margin-top: #{$x}px;
     }
   }
+  $x:4;
+  &__#{$x}{
+    &:nth-child(n+2){
+      margin-top: #{$x}px;
+    }
+  }
+
+
+
+
+
+
+
   $max:68;
   $min:40;
+  &__#{$max}-#{$min}{
+    &:nth-child(n+2){
+      margin-top: #{$min}px;
+      @include media-breakpoint-up('m'){
+        margin-top: #{$max}px;
+      }
+    }
+  }
+  $max:40;
+  $min:20;
   &__#{$max}-#{$min}{
     &:nth-child(n+2){
       margin-top: #{$min}px;
