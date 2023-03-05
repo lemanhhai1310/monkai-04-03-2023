@@ -928,6 +928,39 @@ body {
 .header .uk-logo img {
   height: 32px;
 }
+.header .uk-navbar-right {
+  gap: 12px;
+}
+.header__pay {
+  font-family: "Sarabun", sans-serif;
+  font-family: "Unbounded", cursive;
+  font-size: 12px;
+  line-height: 1.33;
+  font-weight: 500;
+  min-height: 32px;
+  padding: 0 14px;
+  border-radius: 12px;
+  background: #161616;
+  color: #66B933;
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 960px) {
+  .header__pay {
+    background: #000000;
+  }
+}
+.header__pay img {
+  margin-left: 4px;
+}
+.header__user {
+  background: #161616;
+}
+@media (min-width: 960px) {
+  .header__user {
+    background: #000000;
+  }
+}
 .header .uk-navbar-nav > li > a {
   color: rgba(255, 255, 255, 0.2);
 }

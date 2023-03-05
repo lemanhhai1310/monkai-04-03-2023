@@ -13,6 +13,35 @@
       height: 32px;
     }
   }
+  .uk-navbar-right{
+    gap: 12px;
+  }
+  &__pay{
+    font-family: 'Sarabun', sans-serif;
+    font-family: 'Unbounded', cursive;
+    font-size: 12px;
+    line-height: 1.33;
+    font-weight: 500;
+    min-height: 32px;
+    padding: 0 14px;
+    border-radius: 12px;
+    background: #161616;
+    color: #{$primary-color};
+    display: flex;
+    align-items: center;
+    @include media-breakpoint-up('m'){
+      background: #000000;
+    }
+    img{
+      margin-left: 4px;
+    }
+  }
+  &__user{
+    background: #161616;
+    @include media-breakpoint-up('m'){
+      background: #000000;
+    }
+  }
   .uk-navbar-nav{
     >li{
       >a{
