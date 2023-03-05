@@ -1983,4 +1983,19 @@ main {
   top: 2px;
 }
 
+.desktop11__title {
+  text-transform: uppercase;
+  line-height: 1.5;
+  font-family: "Mortend Bold", sans-serif;
+  font-size: 16px;
+  color: #66B933 !important;
+}
+.desktop11__desc {
+  color: #A7A7A7 !important;
+  font-size: 10px;
+  line-height: 1.6;
+  font-family: "Sarabun", sans-serif;
+  font-family: "Unbounded", cursive;
+}
+
 /*# sourceMappingURL=style.css.map */
