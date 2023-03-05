@@ -41,8 +41,28 @@
       margin-top: #{$x}px;
     }
   }
+  $max:68;
+  $min:40;
+  &__#{$max}-#{$min}{
+    &:nth-child(n+2){
+      margin-top: #{$min}px;
+      @include media-breakpoint-up('m'){
+        margin-top: #{$max}px;
+      }
+    }
+  }
   $max:32;
   $min:16;
+  &__#{$max}-#{$min}{
+    &:nth-child(n+2){
+      margin-top: #{$min}px;
+      @include media-breakpoint-up('m'){
+        margin-top: #{$max}px;
+      }
+    }
+  }
+  $max:24;
+  $min:12;
   &__#{$max}-#{$min}{
     &:nth-child(n+2){
       margin-top: #{$min}px;

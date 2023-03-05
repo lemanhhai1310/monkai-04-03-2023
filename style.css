@@ -1335,6 +1335,20 @@ body {
   }
 }
 
+.fz-32, .desktop12__title {
+  font-size: 22.4px !important;
+}
+@media screen and (min-width: 640px) {
+  .fz-32, .desktop12__title {
+    font-size: calc(22.4px + 9.6 * ((100vw - 640px) / 560)) !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .fz-32, .desktop12__title {
+    font-size: 32px !important;
+  }
+}
+
 .line-clamp-1 {
   display: -webkit-box;
   -webkit-line-clamp: 1;
@@ -1391,12 +1405,28 @@ body {
 .item__8:nth-child(n+2) {
   margin-top: 8px;
 }
+.item__68-40:nth-child(n+2) {
+  margin-top: 40px;
+}
+@media (min-width: 960px) {
+  .item__68-40:nth-child(n+2) {
+    margin-top: 68px;
+  }
+}
 .item__32-16:nth-child(n+2) {
   margin-top: 16px;
 }
 @media (min-width: 960px) {
   .item__32-16:nth-child(n+2) {
     margin-top: 32px;
+  }
+}
+.item__24-12:nth-child(n+2) {
+  margin-top: 12px;
+}
+@media (min-width: 960px) {
+  .item__24-12:nth-child(n+2) {
+    margin-top: 24px;
   }
 }
 .item__16-12:nth-child(n+2) {
@@ -1619,6 +1649,7 @@ main {
   color: #ffffff !important;
 }
 .desktop1__btn--c2 {
+  background: #000;
   border-color: #66B933 !important;
   color: #66B933 !important;
 }
@@ -1832,6 +1863,111 @@ main {
 }
 @media screen and (min-width: 1200px) {
   .desktop10__box__txt {
+    font-size: 14px !important;
+  }
+}
+
+.desktop12__title {
+  text-transform: uppercase;
+  line-height: 1.09375;
+  font-family: "Mortend Bold", sans-serif;
+  color: #66B933 !important;
+}
+.desktop12__desc {
+  color: #D9D9D9 !important;
+  line-height: 1.14;
+  font-family: "Sarabun", sans-serif;
+  font-family: "Unbounded", cursive;
+}
+.desktop12__desc {
+  font-size: 12px !important;
+}
+@media screen and (min-width: 640px) {
+  .desktop12__desc {
+    font-size: calc(12px + 2 * ((100vw - 640px) / 560)) !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .desktop12__desc {
+    font-size: 14px !important;
+  }
+}
+.desktop12__card {
+  background: #2A2A2C;
+  border-radius: 12px;
+  padding: 12px;
+}
+@media (min-width: 960px) {
+  .desktop12__card {
+    padding: 24px;
+  }
+}
+.desktop12__card__txt1 {
+  color: #FFFFFF;
+  font-family: "Sarabun", sans-serif;
+  font-family: "Unbounded", cursive;
+  font-weight: 500;
+}
+.desktop12__card__txt1 {
+  font-size: 12px !important;
+}
+@media screen and (min-width: 640px) {
+  .desktop12__card__txt1 {
+    font-size: calc(12px + 12 * ((100vw - 640px) / 560)) !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .desktop12__card__txt1 {
+    font-size: 24px !important;
+  }
+}
+.desktop12__card__txt1 img {
+  height: 16px !important;
+}
+@media screen and (min-width: 640px) {
+  .desktop12__card__txt1 img {
+    height: calc(16px + 14 * ((100vw - 640px) / 560)) !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .desktop12__card__txt1 img {
+    height: 30px !important;
+  }
+}
+.desktop12__card__txt2 {
+  text-transform: uppercase;
+  color: #66B933;
+  font-family: "Mortend Bold", sans-serif;
+  line-height: 1.1041666667;
+}
+.desktop12__card__txt2 {
+  font-size: 24px !important;
+}
+@media screen and (min-width: 640px) {
+  .desktop12__card__txt2 {
+    font-size: calc(24px + 24 * ((100vw - 640px) / 560)) !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .desktop12__card__txt2 {
+    font-size: 48px !important;
+  }
+}
+.desktop12__card__txt3 {
+  color: #FFFFFF;
+  font-weight: 300;
+  font-family: "Mortend Regular", sans-serif;
+}
+.desktop12__card__txt3 {
+  font-size: 11px !important;
+}
+@media screen and (min-width: 640px) {
+  .desktop12__card__txt3 {
+    font-size: calc(11px + 3 * ((100vw - 640px) / 560)) !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .desktop12__card__txt3 {
     font-size: 14px !important;
   }
 }

@@ -1,0 +1,48 @@
+.desktop12{
+  &__title{
+    text-transform: uppercase;
+    line-height: (35/32);
+    font-family: $font-Mortend-Bold;
+    @extend .fz-32;
+    color: #{$primary-color} !important;
+  }
+  &__desc{
+    color: #D9D9D9 !important;
+    @include fluidx(14px,12px,font-size);
+    line-height: 1.14;
+    font-family: 'Sarabun', sans-serif;
+    font-family: 'Unbounded', cursive;
+  }
+  &__card{
+    background: #2A2A2C;
+    border-radius: 12px;
+    padding: 12px;
+    @include media-breakpoint-up('m'){
+      padding: 24px;
+    }
+    &__txt1{
+      color: #FFFFFF;
+      font-family: 'Sarabun', sans-serif;
+      font-family: 'Unbounded', cursive;
+      font-weight: 500;
+      @include fluidx(24px,12px,font-size);
+      img{
+        @include fluidx(30px,16px,height);
+      }
+    }
+    &__txt2{
+      text-transform: uppercase;
+      color: #{$primary-color};
+      @include fluidx(48px,24px,font-size);
+
+      font-family: $font-Mortend-Bold;
+      line-height: (53/48);
+    }
+    &__txt3{
+      color: #FFFFFF;
+      font-weight: 300;
+      font-family: $font-Mortend-Regular;
+      @include fluidx(14px,11px,font-size);
+    }
+  }
+}
