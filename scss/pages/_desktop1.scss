@@ -1,0 +1,50 @@
+.desktop1{
+  &__width{
+    max-width: 512px;
+    width: 100%;
+    box-sizing: content-box;
+  }
+  &__logo{
+    @include fluidx(71px,56px,height);
+  }
+  &__desc{
+    @include fluidx(14px,12px,font-size);
+    color: #D9D9D9;
+    line-height: 1.14;
+  }
+  &__form{
+    &__label{
+      color: #A7A7A7 !important;
+      font-size: 12px;
+      line-height: 1.33;
+    }
+    &__textarea{
+      font-size: 14px;
+      background: #2A2A2C !important;
+      border-color: #2A2A2C !important;
+      &::placeholder{
+        color: rgba(255, 255, 255, 0.2) !important;
+      }
+    }
+  }
+  &__btn{
+    min-width: 160px;
+    width: 100%;
+    border-radius: 12px;
+    line-height: 30px;
+    font-family: $font-Mortend-Bold;
+    padding: 0 13px;
+    >*{
+      position: relative;
+      top: 2px;
+    }
+    &--c1{
+      background: linear-gradient(270.72deg, #66B933 0%, #00DEA1 100%);
+      color: #ffffff !important;
+    }
+    &--c2{
+      border-color: #{$primary-color} !important;
+      color: #{$primary-color} !important;
+    }
+  }
+}

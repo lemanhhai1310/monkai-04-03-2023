@@ -1,0 +1,58 @@
+.header{
+  @include media-breakpoint-up('m'){
+    background: #161616;
+  }
+  &__navitem{
+    min-height: 56px;
+  }
+  &__hover{
+    color: #{$primary-color};
+  }
+  .uk-logo{
+    img{
+      height: 32px;
+    }
+  }
+  .uk-navbar-nav{
+    >li{
+      >a{
+        @extend .header__navitem;
+        color: rgba(255, 255, 255, 0.2);
+        span{
+          font-family: $font-Mortend-Regular;
+          position: relative;
+          top: 1px;
+        }
+        &:hover{
+          @extend .header__hover;
+        }
+        svg{
+          margin-right: 8px;
+        }
+      }
+      &.uk-active{
+        >a{
+          @extend .header__hover;
+        }
+      }
+    }
+  }
+  .uk-navbar-toggle,
+  .uk-navbar-item{
+    @extend .header__navitem;
+  }
+  &__btnLogin{
+    background: linear-gradient(270.72deg, #66B933 0%, #00DEA1 100%);
+    border-radius: 12px;
+    font-family: $font-Mortend-Bold;
+    line-height: 30px;
+    color: #ffffff !important;
+    @include media-breakpoint-up('m'){
+      padding: 0 17px;
+    }
+    >*{
+      position: relative;
+      top: 2px;
+    }
+  }
+}
