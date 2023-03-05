@@ -30,7 +30,7 @@
             <div uk-navbar>
 
                 <div class="uk-navbar-left">
-                    <a href="" class="uk-navbar-item uk-logo"><img src="images/logo.png" alt=""></a>
+                    <a href="" class="uk-navbar-item uk-logo uk-visible@m"><img src="images/logo.png" alt=""></a>
                 </div>
 
                 <div class="uk-navbar-center">
@@ -96,7 +96,7 @@
                         </div>
                     <?php else: ?>
                         <div class="uk-navbar-item">
-                            <a href="" class="header__btnLogin uk-button uk-button-secondary uk-button-small uk-border-rounded"><span>login</span></a>
+                            <a href="#modal-login" uk-toggle class="header__btnLogin uk-button uk-button-secondary uk-button-small uk-border-rounded"><span>login</span></a>
                         </div>
                     <?php endif; ?>
                 </div>

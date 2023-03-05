@@ -23,6 +23,9 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+.uk-modal {
+  background: rgba(0, 0, 0, 0.5);
+}
 @media (min-width: 960px) {
   .uk-container {
     padding-left: 32px;
@@ -889,6 +892,9 @@ body {
 .item__68:nth-child(n+2) {
   margin-top: 68px;
 }
+.item__32:nth-child(n+2) {
+  margin-top: 32px;
+}
 .item__20:nth-child(n+2) {
   margin-top: 20px;
 }
@@ -1085,6 +1091,19 @@ main {
 .desktop1__btn--c2 {
   border-color: #66B933 !important;
   color: #66B933 !important;
+}
+
+.desktop3__modal__dialog {
+  width: 360px;
+  background: #000000;
+  border: 1px solid #66B933;
+  border-radius: 16px;
+}
+.desktop3__modal__logo {
+  margin: 0;
+}
+.desktop3__modal__logo img {
+  height: 32px;
 }
 
 /*# sourceMappingURL=style.css.map */

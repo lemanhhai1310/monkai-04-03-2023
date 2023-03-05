@@ -1,0 +1,16 @@
+.desktop3{
+  &__modal{
+    &__dialog{
+      width: 360px;
+      background: #000000;
+      border: 1px solid #66B933;
+      border-radius: 16px;
+    }
+    &__logo{
+      margin: 0;
+      img{
+        height: 32px;
+      }
+    }
+  }
+}
