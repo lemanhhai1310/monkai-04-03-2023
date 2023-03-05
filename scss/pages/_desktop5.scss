@@ -1,0 +1,42 @@
+.desktop5{
+  &__container{
+    margin-left: -15px;
+    @include media-breakpoint-up('s'){
+      margin-left: -30px;
+    }
+    @include media-breakpoint-up('m'){
+      margin-left: auto;
+      max-width: calc(50% + (1200px / 2) - 0px);
+    }
+  }
+  &__labelTitle{
+    color: #FFFFFF !important;
+    font-size: 16px;
+    font-family: 'Sarabun', sans-serif;
+    font-family: 'Unbounded', cursive;
+    font-weight: 500;
+    line-height: (20/16);
+  }
+  &__card{
+    background: #161616;
+    border-radius: 12px;
+    &__tag{
+      color: #FFFFFF !important;
+      font-size: 16px;
+      font-family: 'Sarabun', sans-serif;
+      font-family: 'Unbounded', cursive;
+      font-weight: 500;
+      line-height: (20/16);
+    }
+    &__icon{
+      color: #FFFFFF !important;
+      font-size: 12px;
+      font-family: 'Sarabun', sans-serif;
+      font-family: 'Unbounded', cursive;
+      svg{
+        position: relative;
+        top: -2px;
+      }
+    }
+  }
+}

@@ -1333,6 +1333,14 @@ body {
 .item__8:nth-child(n+2) {
   margin-top: 8px;
 }
+.item__32-16:nth-child(n+2) {
+  margin-top: 16px;
+}
+@media (min-width: 960px) {
+  .item__32-16:nth-child(n+2) {
+    margin-top: 32px;
+  }
+}
 .item__16-12:nth-child(n+2) {
   margin-top: 12px;
 }
@@ -1341,12 +1349,12 @@ body {
     margin-top: 16px;
   }
 }
-.item__32-16:nth-child(n+2) {
-  margin-top: 16px;
+.item__16-8:nth-child(n+2) {
+  margin-top: 8px;
 }
 @media (min-width: 960px) {
-  .item__32-16:nth-child(n+2) {
-    margin-top: 32px;
+  .item__16-8:nth-child(n+2) {
+    margin-top: 16px;
   }
 }
 
@@ -1692,6 +1700,51 @@ main {
 }
 .desktop6__iconTab.uk-active {
   color: #66B933 !important;
+}
+
+.desktop5__container {
+  margin-left: -15px;
+}
+@media (min-width: 640px) {
+  .desktop5__container {
+    margin-left: -30px;
+  }
+}
+@media (min-width: 960px) {
+  .desktop5__container {
+    margin-left: auto;
+    max-width: calc(50% + 600px - 0px);
+  }
+}
+.desktop5__labelTitle {
+  color: #FFFFFF !important;
+  font-size: 16px;
+  font-family: "Sarabun", sans-serif;
+  font-family: "Unbounded", cursive;
+  font-weight: 500;
+  line-height: 1.25;
+}
+.desktop5__card {
+  background: #161616;
+  border-radius: 12px;
+}
+.desktop5__card__tag {
+  color: #FFFFFF !important;
+  font-size: 16px;
+  font-family: "Sarabun", sans-serif;
+  font-family: "Unbounded", cursive;
+  font-weight: 500;
+  line-height: 1.25;
+}
+.desktop5__card__icon {
+  color: #FFFFFF !important;
+  font-size: 12px;
+  font-family: "Sarabun", sans-serif;
+  font-family: "Unbounded", cursive;
+}
+.desktop5__card__icon svg {
+  position: relative;
+  top: -2px;
 }
 
 /*# sourceMappingURL=style.css.map */

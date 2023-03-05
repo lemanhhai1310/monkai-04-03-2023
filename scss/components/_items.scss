@@ -41,6 +41,16 @@
       margin-top: #{$x}px;
     }
   }
+  $max:32;
+  $min:16;
+  &__#{$max}-#{$min}{
+    &:nth-child(n+2){
+      margin-top: #{$min}px;
+      @include media-breakpoint-up('m'){
+        margin-top: #{$max}px;
+      }
+    }
+  }
   $max:16;
   $min:12;
   &__#{$max}-#{$min}{
@@ -51,8 +61,8 @@
       }
     }
   }
-  $max:32;
-  $min:16;
+  $max:16;
+  $min:8;
   &__#{$max}-#{$min}{
     &:nth-child(n+2){
       margin-top: #{$min}px;
