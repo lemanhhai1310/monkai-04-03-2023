@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="REFRESH" content="1800"/>
     <title><?= /** @var TYPE_NAME  */
-        (isset($data['title'])) ? $data['title'] : ''; ?> - MonKai</title>
+        (isset($data['title'])) ? $data['title'] : ''; ?> - Creativity in the age of artificial intelligence
+    </title>
+    <meta name="description" content='The first platform to automatically generate custom 3D videos. The perfect combination "all in one"'/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <!--CSS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">

@@ -640,6 +640,64 @@ body {
 }
 
 @media (min-width: 1600px) {
+  .uk-grid-32-xl {
+    margin-left: -32px !important;
+  }
+  .uk-grid-32-xl > * {
+    padding-left: 32px !important;
+  }
+  .uk-grid-32-xl > .uk-grid-margin {
+    margin-top: 32px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .uk-grid-32-l {
+    margin-left: -32px !important;
+  }
+  .uk-grid-32-l > * {
+    padding-left: 32px !important;
+  }
+  .uk-grid-32-l > .uk-grid-margin {
+    margin-top: 32px !important;
+  }
+}
+
+@media (min-width: 960px) {
+  .uk-grid-32-m {
+    margin-left: -32px !important;
+  }
+  .uk-grid-32-m > * {
+    padding-left: 32px !important;
+  }
+  .uk-grid-32-m > .uk-grid-margin {
+    margin-top: 32px !important;
+  }
+}
+
+@media (min-width: 640px) {
+  .uk-grid-32-s {
+    margin-left: -32px !important;
+  }
+  .uk-grid-32-s > * {
+    padding-left: 32px !important;
+  }
+  .uk-grid-32-s > .uk-grid-margin {
+    margin-top: 32px !important;
+  }
+}
+
+.uk-grid-32 {
+  margin-left: -32px;
+}
+.uk-grid-32 > * {
+  padding-left: 32px;
+}
+.uk-grid-32 > .uk-grid-margin {
+  margin-top: 32px;
+}
+
+@media (min-width: 1600px) {
   .uk-grid-40-xl {
     margin-left: -40px !important;
   }
@@ -1728,6 +1786,9 @@ main {
   background: #161616;
   border-radius: 12px;
 }
+.desktop5__card .uk-card-header {
+  padding: 10px 15px;
+}
 .desktop5__card__tag {
   color: #FFFFFF !important;
   font-size: 16px;
@@ -1745,6 +1806,34 @@ main {
 .desktop5__card__icon svg {
   position: relative;
   top: -2px;
+}
+
+.desktop10__box {
+  background: #161616;
+  border-radius: 16px;
+  padding: 8px;
+}
+.desktop10__box__coverImg {
+  border-radius: 12px;
+}
+.desktop10__box__txt {
+  color: #FFFFFF !important;
+  line-height: 1.2142857143;
+  font-family: "Sarabun", sans-serif;
+  font-family: "Unbounded", cursive;
+}
+.desktop10__box__txt {
+  font-size: 10px !important;
+}
+@media screen and (min-width: 640px) {
+  .desktop10__box__txt {
+    font-size: calc(10px + 4 * ((100vw - 640px) / 560)) !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .desktop10__box__txt {
+    font-size: 14px !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

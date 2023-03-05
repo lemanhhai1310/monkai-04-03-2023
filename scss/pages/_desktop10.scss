@@ -1,0 +1,17 @@
+.desktop10{
+  &__box{
+    background: #161616;
+    border-radius: 16px;
+    padding: 8px;
+    &__coverImg{
+      border-radius: 12px;
+    }
+    &__txt{
+      color: #FFFFFF !important;
+      @include fluidx(14px,10px,font-size);
+      line-height: (17/14);
+      font-family: 'Sarabun', sans-serif;
+      font-family: 'Unbounded', cursive;
+    }
+  }
+}
