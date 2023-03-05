@@ -1,4 +1,43 @@
 .uk{
+  &-child{
+    &-width{
+      &-1{
+        &-7{
+          >*{
+            width: calc(100% * 1 / 7.001);
+          }
+          &-s{
+            >*{
+              @include media-breakpoint-up('s'){
+                width: calc(100% * 1 / 7.001);
+              }
+            }
+          }
+          &-m{
+            >*{
+              @include media-breakpoint-up('m'){
+                width: calc(100% * 1 / 7.001);
+              }
+            }
+          }
+          &-l{
+            >*{
+              @include media-breakpoint-up('l'){
+                width: calc(100% * 1 / 7.001);
+              }
+            }
+          }
+          &-xl{
+            >*{
+              @include media-breakpoint-up('xl'){
+                width: calc(100% * 1 / 7.001);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
   &-modal{
     background: rgba(0, 0, 0, 0.5);
   }
