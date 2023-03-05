@@ -1,0 +1,12 @@
+.desktop15{
+  &__btn{
+    background: #000000 !important;
+    border-color: #{$primary-color} !important;
+    line-height: 30px;
+    font-family: $font-Mortend-Bold;
+    >*{
+      position: relative;
+      top: 2px;
+    }
+  }
+}

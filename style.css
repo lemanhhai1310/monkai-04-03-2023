@@ -1972,4 +1972,15 @@ main {
   }
 }
 
+.desktop15__btn {
+  background: #000000 !important;
+  border-color: #66B933 !important;
+  line-height: 30px;
+  font-family: "Mortend Bold", sans-serif;
+}
+.desktop15__btn > * {
+  position: relative;
+  top: 2px;
+}
+
 /*# sourceMappingURL=style.css.map */
