@@ -1,5 +1,6 @@
 <?php $data["title"] = "Desktop 1"; ?>
 <?php $isLogin = false; ?>
+<?php $isBack = false; ?>
 <?php require "template-parts/layouts/header.php"; ?>
 <div class="uk-container">
     <div class="uk-text-center">

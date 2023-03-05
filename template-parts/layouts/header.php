@@ -25,11 +25,27 @@
 <!--app-->
 <div id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
     <!--header-->
-    <nav class="header uk-navbar-container uk-navbar-transparent">
+    <nav class="header uk-navbar-container uk-navbar-transparent" uk-sticky>
         <div class="uk-container uk-container-expand">
             <div uk-navbar>
 
                 <div class="uk-navbar-left">
+                    <?php if (isset($isBack)&&$isBack): ?>
+                    <div class="uk-navbar-item uk-hidden@m">
+                        <div class="uk-cover-container uk-border-circle desktop4__back">
+                            <svg class="uk-position-center" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="mask0_50_47" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                                    <rect width="24" height="24" fill="#D9D9D9"/>
+                                </mask>
+                                <g mask="url(#mask0_50_47)">
+                                    <path d="M10.875 19.3L4.275 12.7C4.175 12.6 4.10417 12.4917 4.0625 12.375C4.02083 12.2583 4 12.1333 4 12C4 11.8667 4.02083 11.7417 4.0625 11.625C4.10417 11.5083 4.175 11.4 4.275 11.3L10.875 4.69999C11.0583 4.51665 11.2875 4.42082 11.5625 4.41249C11.8375 4.40415 12.075 4.49999 12.275 4.69999C12.475 4.88332 12.5792 5.11249 12.5875 5.38749C12.5958 5.66249 12.5 5.89999 12.3 6.09999L7.4 11H18.575C18.8583 11 19.0958 11.0958 19.2875 11.2875C19.4792 11.4792 19.575 11.7167 19.575 12C19.575 12.2833 19.4792 12.5208 19.2875 12.7125C19.0958 12.9042 18.8583 13 18.575 13H7.4L12.3 17.9C12.4833 18.0833 12.5792 18.3167 12.5875 18.6C12.5958 18.8833 12.5 19.1167 12.3 19.3C12.1167 19.5 11.8833 19.6 11.6 19.6C11.3167 19.6 11.075 19.5 10.875 19.3Z" fill="#D9D9D9"/>
+                                </g>
+                            </svg>
+                            <canvas width="40" height="40"></canvas>
+                            <a href="" class="uk-position-cover"></a>
+                        </div>
+                    </div>
+                    <?php endif; ?>
                     <a href="" class="uk-navbar-item uk-logo uk-visible@m"><img src="images/logo.png" alt=""></a>
                 </div>
 
@@ -77,7 +93,7 @@
                     </ul>
                 </div>
                 <div class="uk-navbar-right">
-                    <?php if ($isLogin): ?>
+                    <?php if (isset($isLogin)&&$isLogin): ?>
                         <div class="uk-navbar-item">
                             <div class="header__pay">100 <img src="images/Asset11.png" alt=""></div>
                         </div>

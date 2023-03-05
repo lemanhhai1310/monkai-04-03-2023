@@ -1,6 +1,15 @@
 .header{
+  &__bg{
+    background: #161616;
+  }
   @include media-breakpoint-up('m'){
     background: #161616;
+  }
+  &.uk-active{
+    //@extend .header__bg;
+    &.uk-sticky-below{
+      //@extend .header__bg;
+    }
   }
   &__navitem{
     min-height: 56px;
@@ -32,6 +41,9 @@
     @include media-breakpoint-up('m'){
       background: #000000;
     }
+    .uk-active &{
+      //background: #000000;
+    }
     img{
       margin-left: 4px;
     }
@@ -40,6 +52,9 @@
     background: #161616;
     @include media-breakpoint-up('m'){
       background: #000000;
+    }
+    .uk-active &{
+      //background: #000000;
     }
   }
   .uk-navbar-nav{
@@ -56,7 +71,7 @@
           @extend .header__hover;
         }
         svg{
-          margin-right: 8px;
+          margin-right: 4px;
         }
       }
       &.uk-active{

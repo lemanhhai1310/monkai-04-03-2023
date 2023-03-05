@@ -1,6 +1,8 @@
 main{
   padding-top: 28px !important;
+  padding-bottom: 40px !important;
   @include media-breakpoint-up('m'){
     padding-top: 96px !important;
+    padding-bottom: 68px !important;
   }
 }
