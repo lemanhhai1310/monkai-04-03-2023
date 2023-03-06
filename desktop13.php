@@ -2,34 +2,57 @@
 <?php $isLogin = true; ?>
 <?php $isBack = false; ?>
 <?php require "template-parts/layouts/header.php"; ?>
-<div class="uk-container">
-    <div class="uk-text-center">
-        <figure class="uk-margin-remove"><a href=""><img class="desktop1__logo" src="images/logo.png" alt=""></a></figure>
-        <div class="item__16 desktop1__desc">Create amazing artworks in seconds
-            using the power of Artificial Intelligence <br class="uk-visible@m">
-            Try it now!</div>
-    </div>
-    <div class="item__68 uk-child-width-auto uk-flex-center" uk-grid>
-        <div class="desktop1__width">
-            <form class="uk-form-stacked">
-                <div class="uk-margin">
-                    <label class="uk-form-label desktop1__form__label uk-text-center@m" for="form-stacked-text">Describe what you want to see</label>
-                    <div class="uk-form-controls">
-                        <textarea class="desktop1__form__textarea uk-textarea uk-text-center@m uk-border-rounded" rows="4" placeholder="A steampunk monkey vending machine" aria-label="Textarea"></textarea>
+    <div class="uk-container">
+        <h2 class="uk-h2 desktop12__title uk-text-center uk-margin-remove">Buy more credits</h2>
+        <div class="desktop12__desc uk-text-center item__24-12">Choose a plan that works for you.</div>
+        <div class="item__68-40 uk-child-width-1-3@m uk-grid-small uk-grid-32-m uk-grid-match" uk-grid>
+            <?php
+            $data = array(
+                array(
+                    'txt1' => '100',
+                    'txt2' => '2.99',
+                    'txt3' => '0.03',
+                ),
+                array(
+                    'txt1' => '200',
+                    'txt2' => '4.99',
+                    'txt3' => '0.025',
+                ),
+                array(
+                    'txt1' => '500',
+                    'txt2' => '9.99',
+                    'txt3' => '0.02',
+                ),
+                array(
+                    'txt1' => '1000',
+                    'txt2' => '14.99',
+                    'txt3' => '0.015',
+                ),
+                array(
+                    'txt1' => '2000',
+                    'txt2' => '29.99',
+                    'txt3' => '0.012',
+                ),
+                array(
+                    'txt1' => '10000',
+                    'txt2' => '99.99',
+                    'txt3' => '0.01',
+                ),
+            );
+            foreach ($data as $k=>$v): ?>
+                <div>
+                    <div class="uk-card desktop12__card uk-card-body uk-padding-small">
+                        <div class="desktop12__card__txt1"><?= $v['txt1'] ?> <img src="images/desktop12/Asset11.png" alt=""></div>
+                        <div class="item__16 desktop12__card__txt2"><?= $v['txt2'] ?>$</div>
+                        <div class="desktop12__card__txt3">($0.03/ <img src="images/desktop12/electric_bolt.png" alt=""> )</div>
+                        <div class="item__24-12">
+                            <a href="" class="header__btnLogin uk-width uk-button uk-button-secondary uk-button-small uk-border-rounded"><span>Buy more credit</span></a>
+                        </div>
                     </div>
                 </div>
-                <div class="item__16-12 uk-child-width-auto@s uk-flex-center uk-grid-8" uk-grid uk-toggle="cls: uk-child-width-expand; mode: media; media: (max-width: 639.8px)">
-                    <div class="">
-                        <a href="" class="desktop1__btn desktop1__btn--c1 uk-border-rounded uk-button uk-button-secondary uk-button-small"><div>Generate (1 <img src="images/Asset11.png" alt="">)</div></a>
-                    </div>
-                    <div class="">
-                        <a href="" class="desktop1__btn desktop1__btn--c2 uk-border-rounded uk-button uk-button-default uk-button-small"><div><img class="uk-margin-small-right" src="images/casino.png" alt="">Random</div></a>
-                    </div>
-                </div>
-            </form>
+            <?php endforeach; ?>
         </div>
     </div>
-</div>
 
 <!--Modal Login-->
 <div id="modal-desktop13" class="desktop3__modal uk-flex-top" uk-modal>
@@ -67,5 +90,6 @@
 <!--/Modal Login-->
 <script>
     UIkit.modal('#modal-desktop13').show();
+
 </script>
 <?php require "template-parts/layouts/footer.php"; ?>

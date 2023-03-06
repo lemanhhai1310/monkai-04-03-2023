@@ -35,8 +35,18 @@
       text-align: left;
       position: relative;
       line-height: 34px;
+      font-size: 10px;
+      font-family: 'Sarabun', sans-serif;
+      font-family: 'Unbounded', cursive;
+      font-weight: 500;
       .uk-icon{
         right: 6px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_12_2267' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='16' height='16'%3E%3Crect width='16' height='16' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_12_2267)'%3E%3Cpath d='M7.99978 9.96667C7.91089 9.96667 7.82755 9.95278 7.74978 9.925C7.672 9.89723 7.59978 9.85 7.53311 9.78334L4.44978 6.7C4.32755 6.57778 4.26922 6.425 4.27478 6.24167C4.28033 6.05834 4.34422 5.90556 4.46644 5.78334C4.58867 5.66112 4.74422 5.6 4.93311 5.6C5.122 5.6 5.27755 5.66112 5.39978 5.78334L7.99978 8.38334L10.6164 5.76667C10.7387 5.64445 10.8914 5.58612 11.0748 5.59167C11.2581 5.59723 11.4109 5.66112 11.5331 5.78334C11.6553 5.90556 11.7164 6.06112 11.7164 6.25C11.7164 6.43889 11.6553 6.59445 11.5331 6.71667L8.46644 9.78334C8.39978 9.85 8.32755 9.89723 8.24978 9.925C8.172 9.95278 8.08867 9.96667 7.99978 9.96667Z' fill='white'/%3E%3C/g%3E%3C/svg%3E%0A");
+        svg{
+          visibility: hidden;
+        }
       }
       &.uk-form-success{
         border-color: #{$primary-color} !important;
@@ -95,6 +105,17 @@
       font-family: 'Unbounded', cursive;
       line-height: 1.6;
       margin-left: 5px;
+    }
+    &__textarea{
+      background-color: #2A2A2C !important;
+      border-color: #2A2A2C !important;
+      border-radius: 12px;
+      color: #FFFFFF !important;
+      font-size: 10px;
+      font-family: 'Sarabun', sans-serif;
+      font-family: 'Unbounded', cursive;
+      font-weight: 500;
+      padding-right: 40px;
     }
     &__input{
       height: 36px;
