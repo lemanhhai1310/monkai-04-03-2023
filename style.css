@@ -2149,6 +2149,7 @@ main {
   font-family: "Sarabun", sans-serif;
   font-family: "Unbounded", cursive;
   line-height: 1.6;
+  margin-left: 5px;
 }
 .desktop16__form__input {
   height: 36px;

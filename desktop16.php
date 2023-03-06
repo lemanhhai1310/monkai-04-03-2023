@@ -55,26 +55,26 @@
                     <div class="uk-form-controls">
                         <div class="uk-inline uk-width">
                             <a class="uk-form-icon uk-form-icon-flip desktop16__form__icon desktop16__form__icon--copy" href="#" uk-icon="icon: link" uk-tooltip="Copy to Clipboard"></a>
-                            <input class="uk-input uk-width desktop16__form__input" type="text" value="ABCDEFGHILMN" aria-label="Clickable icon">
+                            <input class="uk-input uk-width desktop16__form__input" disabled type="text" value="ABCDEFGHILMN" aria-label="Clickable icon">
                         </div>
                     </div>
                 </div>
                 <div class="uk-width-1-2@s">
                     <label class="uk-form-label desktop16__form__label" for="form-stacked-text">Status</label>
                     <div class="uk-form-controls">
-                        <input class="uk-input desktop16__form__input uk-text-success" id="form-stacked-text" type="text" value="Success" placeholder="Some text...">
+                        <input class="uk-input desktop16__form__input uk-text-success" disabled id="form-stacked-text" type="text" value="Success" placeholder="Some text...">
                     </div>
                 </div>
                 <div class="uk-width-1-2@s">
                     <label class="uk-form-label desktop16__form__label" for="form-stacked-text">Payment Method</label>
                     <div class="uk-form-controls">
-                        <input class="uk-input desktop16__form__input desktop16__form__input--paymethod uk-background-norepeat uk-background-center-right" id="form-stacked-text" type="text" value="Visa" placeholder="Some text..." data-src="images/desktop16/visa.png" uk-img>
+                        <input class="uk-input desktop16__form__input desktop16__form__input--paymethod uk-background-norepeat uk-background-center-right" disabled id="form-stacked-text" type="text" value="Visa" placeholder="Some text..." data-src="images/desktop16/visa.png" uk-img>
                     </div>
                 </div>
                 <div class="uk-width">
                     <label class="uk-form-label desktop16__form__label" for="form-stacked-text">Cardholder Name</label>
                     <div class="uk-form-controls">
-                        <input class="uk-input desktop16__form__input" id="form-stacked-text" type="text" value="NAME NAME NAME" placeholder="Some text...">
+                        <input class="uk-input desktop16__form__input" id="form-stacked-text" disabled type="text" value="NAME NAME NAME" placeholder="Some text...">
                     </div>
                 </div>
                 <div class="uk-width">
@@ -82,7 +82,7 @@
                     <div class="uk-form-controls">
                         <div class="uk-inline uk-width">
                             <a class="uk-form-icon uk-form-icon-flip desktop16__form__icon desktop16__form__icon--pass" href="#" uk-icon="icon: eye-slash"></a>
-                            <input class="uk-input uk-width desktop16__form__input" type="password" value="ABCDEFGHILMN" aria-label="Clickable icon">
+                            <input class="uk-input uk-width desktop16__form__input" disabled type="password" value="ABCDEFGHILMN" aria-label="Clickable icon">
                         </div>
                     </div>
                 </div>
