@@ -1,0 +1,21 @@
+.modal1{
+  &__txt{
+    color: #A7A7A7 !important;
+    font-size: 10px;
+    font-family: 'Sarabun', sans-serif;
+    font-family: 'Unbounded', cursive;
+    line-height: 1.6;
+  }
+  &__price{
+    color: #{$primary-color} !important;
+    font-family: $font-Mortend-Bold;
+    font-size: 24px;
+    line-height: (26/24);
+    text-align: right;
+  }
+  &__back{
+    position: absolute;
+    top: 16px;
+    left: 16px;
+  }
+}
