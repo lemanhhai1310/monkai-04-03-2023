@@ -32,7 +32,7 @@
 </div>
 
 <!--Modal Login-->
-<div id="modal-desktop11" class="desktop3__modal uk-flex-top" uk-modal>
+<div id="modal-modal3" class="desktop3__modal uk-flex-top" uk-modal>
     <div class="uk-modal-dialog desktop3__modal__dialog uk-modal-body uk-margin-auto-vertical">
 
         <button class="uk-modal-close-default" type="button" uk-close></button>
@@ -47,6 +47,6 @@
 </div>
 <!--/Modal Login-->
 <script>
-    UIkit.modal('#modal-desktop11').show();
+    UIkit.modal('#modal-modal3').show();
 </script>
 <?php require "template-parts/layouts/footer.php"; ?>
